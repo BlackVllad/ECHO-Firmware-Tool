@@ -1,5 +1,10 @@
 # ECHO Series Firmware Upgrade Guide
 
+> **Acknowledgments & Important Notice:**  
+> The tool and initial instructions in this repository were provided directly by **FiiO Support**.  
+>  
+> ⚠️ **Note:** This specific method and tool configuration is primarily effective for devices stuck in **MaskRom Mode**. If your device is currently in **Loader Mode** and you are trying to unbrick it, this process might not work. For Loader Mode unbricking instructions, please refer to this guide: [HOW TO UNBRICK A ECHO MINI : r/snowsky](https://www.reddit.com/r/snowsky/comments/1rql5fy/how_to_unbrick_a_echo_mini/)
+
 ## 1. Introduction
 This repository contains the RKDevelopTool and drivers required to flash firmware updates to the Snowsky ECHO series of devices.
 
