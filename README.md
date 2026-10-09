@@ -18,12 +18,21 @@ Make sure you use the correct firmware `.img` file for your specific device mode
 *   **Echo Nano:** `NANO_F512M_HW_V1.0_SW_V1.4.0_HIFIDAC43131_3KEY_20260623_1024`
 
 ## 2. Install the Driver
-Before using the tool, you must install the Rockusb driver on your computer:
+Before using the tool, you must install the Rockusb driver on your computer. These drivers are strictly necessary for Windows to communicate with the Rockchip (RKNano) processor at a low level, especially when the device is stuck in MaskROM mode.
+
+There are two ways to install the driver:
+
+**Option A (Recommended): Using DriverAssistant**
+1. Open the `DriverAssistant_v5.14` folder included in this repository.
+2. Run `DriverInstall.exe` and click **"Install Driver"**.
+3. Wait for the installation success message. This will automatically set up the correct `Rockusb Device` drivers for your system.
+
+**Option B: Manual Installation**
 1. Connect the device to your PC.
-2. Right-click **"This PC"** (or "My Computer") → select **"Properties"** → select **"Device Manager"**.
+2. Right-click **"This PC"** (or "My Computer") -> select **"Properties"** -> select **"Device Manager"**.
 3. Expand **"Other devices"** and find the unknown device with a yellow exclamation mark.
 4. Right-click it and click **"Update driver"**.
-5. Follow the prompts, select manual installation location, and choose the `Driver` folder inside the tool directory (`Rockusb` folder). 
+5. Follow the prompts, select manual installation location, and choose the `Driver` folder inside the tool directory. 
 6. Select the corresponding driver based on your system parameters (x86/x64, Win7/Win10).
 *Note: If the Win10 driver fails, you can try installing the Win8 driver.*
 
