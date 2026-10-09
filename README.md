@@ -9,6 +9,8 @@
 This repository contains the RKDevelopTool and drivers required to flash firmware updates to the Snowsky ECHO series of devices.
 
 ### Firmware Files Reference
+> **Important Note:** It is highly recommended to rename the firmware `.img` file to something simple (e.g., `firmware.img`) before flashing. Computers with English locales often fail to detect or read files properly if their names contain Chinese characters.
+
 Make sure you use the correct firmware `.img` file for your specific device model:
 *   **ECHO:** `HT9099(ECHO)BT53_HW_V1.7_SW_V1.2.0_HIFIDAC43198_6KEY_20260204_1130`
 *   **Echo Mini (8GB version):** `HT9093BT53_五套UI_HW_V1.3_SW_V3.2.0_HIFIDAC43131_LCD读ID识别_6KEY_20260211_1043`
