@@ -39,15 +39,15 @@ There are two ways to install the driver:
 ## 3. Flash the Firmware
 1. Open the **`RKDevelopTool.exe`** program. *(Note: The tool has already been configured to display in English by setting `Selected=2` in the `config.ini` file).*
 2. Click **"Load firmware"** (button 1) and select the correct `.img` file for your device from the list above. The tool will say `Loading firmware...` and then `Loading firmware Finished.`.
-3. Check the lower-left corner of the program to see how your device is detected:
-   * **If it says "Found one MASKROM device" (Bricked Device):** 
-     > :warning: **CRITICAL:** Do **NOT** click the "Switch" button. Since your device is already bricked, it is already in the correct mode. Clicking "Switch" will cause it to disconnect. **Skip directly to Step 4.**
-   * **If it says "Found one MSC device" (Healthy Device):** 
-     Click the **"Switch"** button (button 2). The lower-left corner will change to **"Found one MASKROM device"** or **"Found one Loader device"**.
-   * *Troubleshooting:* If it displays "No devices found", the driver installation failed. Reinstall the driver, then restart the device by long-pressing the Reset button and powering it back on.
-4. Click **"Erase system block"** (button 3) to wipe the old firmware.
-5. Click **"Upgrade"** (button 5) to flash the new firmware.
-6. The data in the lower-right corner will show the progress. Once complete, it will display: `Download Firmware Success`.
+   * Check the lower-left corner of the program to see how your device is detected:
+     * **If it says "Found one MASKROM device" (Bricked Device):** 
+       > :warning: **CRITICAL:** Do **NOT** click the "Switch" button. Since your device is already bricked, it is already in the correct mode. Clicking "Switch" will cause it to disconnect. **Pass directly to step 3.**
+     * **If it says "Found one MSC device" (Healthy Device):** 
+       Click the **"Switch"** button (button 2). The lower-left corner will change to **"Found one MASKROM device"** or **"Found one Loader device"**.
+     * *Troubleshooting:* If it displays "No devices found", the driver installation failed. Reinstall the driver, then restart the device by long-pressing the Reset button and powering it back on.
+3. Click **"Erase system block"** (button 3) to wipe the old firmware.
+4. Click **"Upgrade"** (button 5) to flash the new firmware.
+5. The data in the lower-right corner will show the progress. Once complete, it will display: `Download Firmware Success`.
 
 ## 4. Error Message Description
 *   **"Failed to load configuration information..."** — Error loading `config.ini`. Usually caused by special or Chinese characters in the folder path. (This repo fixes that issue).
